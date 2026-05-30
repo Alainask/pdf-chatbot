@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Chatbot - Ask Questions from PDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📄 PDF Question Answering Chatbot</h1>
+            <p>Upload a PDF, then ask questions about its content</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="file-input-wrapper">
+                <input type="file" id="pdfInput" accept=".pdf">
+                <label for="pdfInput" class="file-label">Choose PDF File</label>
+            </div>
+            <button id="uploadBtn" class="btn btn-primary">Upload PDF</button>
+        </div>
+
+        <div id="uploadStatus" class="status-message"></div>
+
+        <div class="chat-section">
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot">
+                        <div class="message-content">
+                            👋 Hello! I'm your PDF assistant.<br><br>
+                            📌 **How to use:**<br>
+                            1. Click "Choose PDF File" to select a PDF<br>
+                            2. Click "Upload PDF" to process it<br>
+                            3. Type your question and click "Ask"<br><br>
+                            💡 **Example questions:**<br>
+                            • What is this PDF about?<br>
+                            • What is the PDF name?<br>
+                            • Summarize the main points
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-area">
+                    <input 
+                        type="text" 
+                        id="questionInput" 
+                        placeholder="Ask a question about the PDF..."
+                        disabled
+                    >
+                    <button id="askBtn" class="btn btn-secondary" disabled>Ask</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
