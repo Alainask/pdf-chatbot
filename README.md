@@ -23,6 +23,21 @@ A RAG (Retrieval-Augmented Generation) chatbot that allows users to upload a PDF
 ## Installation
 
 ### 1. Clone the repository
-```bash
+
 git clone https://github.com/Alainask/pdf-chatbot.git
 cd pdf-chatbot
+
+### 2. Install backend dependencies
+  cd backend
+  npm install
+
+### 3. Set up environment variables
+ Create a .env file in the backend folder:
+  GROQ_API_KEY=your_groq_api_key_here
+
+### 4. Start the backend server
+  node server.js
+
+### 5. Open the frontend
+ Open frontend/index.html in your browser (double-click the file from the main pdf-chatbot folder)
+   
